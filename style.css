@@ -77,16 +77,26 @@
 }
 
 @media (max-width: 480px) {
+
+    .container {
+        flex-direction: column; /* Alinha os controles e o painel verticalmente em telas menores */
+    }
+        
     #painel {
-        width: 100%; /* Painel ocupa 100% da tela em dispositivos muito pequenos */
-        height: 300px; /* Altura reduzida para caber melhor em celulares */
+        width: 90%; /* Painel ocupa 100% da tela em dispositivos muito pequenos */
+        height: auto; /* Altura reduzida para caber melhor em celulares */
     }
+
+        .controle {
+        width: 80%; /* Botões ajustam sua largura para 80% em telas menores */
+        font-size: 14px; /* Tamanho da fonte menor em telas menores */
+        padding: 8px; /* Menos espaço de preenchimento para botões em telas menores */
+    }
+
+        
     #instrucao {
-        font-size: 8px; /* Tamanho da fonte ainda menor em dispositivos pequenos */
+        font-size: 10px; /* Tamanho da fonte ainda menor em dispositivos pequenos */
     }
-    #grafico {
-        width: 60px; /* Imagem dentro do painel ajustada para ser menor */
-        height: 60px;
-    }
+    
 }
 
