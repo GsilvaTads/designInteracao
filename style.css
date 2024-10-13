@@ -82,11 +82,11 @@
         height: 300px; /* Altura reduzida para caber melhor em celulares */
     }
     #instrucao {
-        font-size: 14px; /* Tamanho da fonte ainda menor em dispositivos pequenos */
+        font-size: 8px; /* Tamanho da fonte ainda menor em dispositivos pequenos */
     }
     #grafico {
-        width: 80px; /* Imagem dentro do painel ajustada para ser menor */
-        height: 80px;
+        width: 60px; /* Imagem dentro do painel ajustada para ser menor */
+        height: 60px;
     }
 }
 
