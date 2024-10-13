@@ -1,11 +1,10 @@
         /* Estilo da div que funciona como o painel */
         #painel {
-            width: 500px;
-            height: 500px;
-            border: 5px solid black;
-            position: relative;
-            margin: 50px auto;
-            background-color: rgb(253, 253, 253);
+        width: 100%; /* Agora ocupa toda a largura disponível */
+        max-width: 500px; /* Limite de 500px para telas maiores */
+        height: 500px;
+        margin: 20px auto;
+         background-color: rgb(253, 253, 253);
         }
 
         #instrucao {
@@ -35,9 +34,11 @@
 
         /* Painel e controles juntos */
         .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
         }
 
         /* Botões de controle */
@@ -58,3 +59,34 @@
         margin-left: 20px; 
         align-items: right;
         }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Alinha os controles e o painel verticalmente em telas menores */
+    }
+    #painel {
+        width: 90%; /* O painel agora ocupa 90% da largura da tela */
+        height: auto; /* Ajusta a altura automaticamente para evitar que ocupe muito espaço */
+    }
+    .controle {
+        width: 90%; /* Botões ajustam sua largura para 90% em telas menores */
+    }
+    #instrucao {
+        font-size: 16px; /* Texto menor em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    #painel {
+        width: 100%; /* Painel ocupa 100% da tela em dispositivos muito pequenos */
+        height: 300px; /* Altura reduzida para caber melhor em celulares */
+    }
+    #instrucao {
+        font-size: 14px; /* Tamanho da fonte ainda menor em dispositivos pequenos */
+    }
+    #grafico {
+        width: 80px; /* Imagem dentro do painel ajustada para ser menor */
+        height: 80px;
+    }
+}
+
