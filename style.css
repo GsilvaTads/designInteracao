@@ -1,0 +1,60 @@
+        /* Estilo da div que funciona como o painel */
+        #painel {
+            width: 500px;
+            height: 500px;
+            border: 5px solid black;
+            position: relative;
+            margin: 50px auto;
+            background-color: rgb(253, 253, 253);
+        }
+
+        #instrucao {
+        font-size: 20px; /* Aumenta o tamanho da fonte */
+        text-align: center; /* Centraliza o texto */
+        margin: 0; /* Remove margens para um melhor ajuste */
+        }
+
+        /* Elemento imagem */
+        #grafico {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50%; /* Posição inicial */
+            left: 50%; /* Posição inicial */
+            transform: translate(-50%, -50%); /* Centraliza a imagem */
+        }
+
+        /* Estilo dos botões de controle */
+        #controles {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Alinha os botões à esquerda */
+            margin-right: 10px;
+            margin-left: 20px; /* Margem entre os controles e o painel */
+        }
+
+        /* Painel e controles juntos */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Botões de controle */
+        .controle {
+            margin-bottom: 10px;
+            padding: 10px ;
+            font-size: 16px;
+            width: 200px;
+        }
+
+        #paleta {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 18px;            
+        }
+
+        #paleta input {
+        margin-left: 20px; 
+        align-items: right;
+        }
